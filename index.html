@@ -4,232 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Md Masud-Ul-Alam | Oceanographer & Remote Sensing Scientist</title>
-  <meta name="description" content="Academic website of Md Masud-Ul-Alam, Ph.D. Candidate in Marine Sciences at the University of Georgia Skidaway Institute of Oceanography.">
-  
-  <!-- FontAwesome Icons for Social/Academic Links -->
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Academicons for Google Scholar, ORCID, ResearchGate -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  
-  <style>
-    /* CSS STYLES & LAYOUT */
-    :root {
-      --primary-color: #0056b3;
-      --accent-color: #008080;
-      --text-main: #2b2b2b;
-      --text-muted: #555555;
-      --bg-light: #f8f9fa;
-      --border-color: #e9ecef;
-      --sidebar-width: 300px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      color: var(--text-main);
-      line-height: 1.6;
-      background-color: #ffffff;
-    }
-
-    /* Container Layout */
-    .container {
-      display: flex;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      gap: 40px;
-    }
-
-    /* Sidebar Styling */
-    .sidebar {
-      width: var(--sidebar-width);
-      flex-shrink: 0;
-      position: sticky;
-      top: 20px;
-      height: fit-content;
-      text-align: center;
-      padding: 20px;
-      background: var(--bg-light);
-      border-radius: 8px;
-      border: 1px solid var(--border-color);
-    }
-
-    .profile-img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover; /* Prevents stretching */
-      object-position: center 20%; /* Keeps head and face centered */
-    }
-
-    .sidebar h1 {
-      font-size: 1.5rem;
-      margin-bottom: 5px;
-      color: #111;
-    }
-
-    .sidebar p {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      margin-bottom: 12px;
-    }
-
-    .social-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 15px;
-    }
-
-    .social-links a {
-      color: var(--text-main);
-      font-size: 1.4rem;
-      transition: color 0.2s ease;
-    }
-
-    .social-links a:hover {
-      color: var(--primary-color);
-    }
-
-    .cv-btn {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 8px 18px;
-      background-color: var(--primary-color);
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      transition: background 0.2s ease;
-    }
-
-    .cv-btn:hover {
-      background-color: #003d80;
-    }
-
-    /* Main Content Area */
-    .main-content {
-      flex-grow: 1;
-      max-width: 800px;
-    }
-
-    /* Navigation Bar */
-    .navbar {
-      display: flex;
-      gap: 20px;
-      border-bottom: 2px solid var(--border-color);
-      margin-bottom: 30px;
-      padding-bottom: 10px;
-      position: sticky;
-      top: 0;
-      background: white;
-      z-index: 10;
-    }
-
-    .navbar a {
-      text-decoration: none;
-      color: var(--text-muted);
-      font-weight: 600;
-      font-size: 1rem;
-      padding-bottom: 5px;
-    }
-
-    .navbar a:hover, .navbar a.active {
-      color: var(--primary-color);
-      border-bottom: 2px solid var(--primary-color);
-    }
-
-    /* Sections */
-    section {
-      margin-bottom: 40px;
-      scroll-margin-top: 60px;
-    }
-
-    section h2 {
-      font-size: 1.4rem;
-      color: var(--primary-color);
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 6px;
-      margin-bottom: 15px;
-    }
-
-    ul {
-      list-style-type: square;
-      margin-left: 20px;
-      margin-bottom: 15px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    /* Publication Cards */
-    .pub-item {
-      margin-bottom: 18px;
-      padding-bottom: 12px;
-      border-bottom: 1px dashed var(--border-color);
-    }
-
-    .pub-title {
-      font-weight: 600;
-      color: #111;
-      text-decoration: none;
-    }
-
-    .pub-authors {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-    }
-
-    .pub-journal {
-      font-size: 0.9rem;
-      font-style: italic;
-      color: #333;
-    }
-
-    .pub-links {
-      margin-top: 5px;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 2px 8px;
-      font-size: 0.75rem;
-      font-weight: 600;
-      background: var(--bg-light);
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-right: 5px;
-      color: #333;
-      text-decoration: none;
-    }
-
-    .badge:hover {
-      background: #e2e6ea;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 850px) {
-      .container {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: 100%;
-        position: relative;
-        top: 0;
-      }
-    }
-  </style>
 </head>
 <body>
-
   <div class="container">
     <!-- LEFT SIDEBAR -->
     <aside class="sidebar">
@@ -238,10 +17,9 @@
       <p>Ph.D. Candidate in Marine Sciences</p>
       <p><strong>University of Georgia</strong><br>Skidaway Institute of Oceanography</p>
       
-      <!-- Social and Academic Links -->
       <div class="social-links">
-        <a href="mailto:masudocndu@uga.edu" title="Email"><i class="fas me-envelope"></i></a>
-        <a href="https://scholar.google.com/citations?user=UqXE_IUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a href="mailto:masudocndu@uga.edu" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://scholar.google.com/citations?user=UqXEIUAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
         <a href="https://www.researchgate.net/profile/Md-Masud-Ul-Alam" target="_blank" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
         <a href="https://orcid.org/0000-0003-3036-8167" target="_blank" title="ORCID"><i class="ai ai-orcid"></i></a>
         <a href="https://github.com/masud-ocean" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
@@ -250,161 +28,39 @@
       <a href="CV_Md_Masud-Ul-Alam_GitHub.pdf" class="cv-btn" target="_blank"><i class="fas fa-file-pdf"></i> Download CV</a>
     </aside>
 
-    <!-- MAIN CONTENT AREA -->
+    <!-- MAIN CONTENT -->
     <main class="main-content">
-      <!-- Top Navigation -->
       <nav class="navbar">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching & Mentoring</a>
-        <a href="#fieldwork">Fieldwork</a>
+        <a href="index.html" class="active">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching & Mentoring</a>
+        <a href="fieldwork.html">Fieldwork</a>
       </nav>
 
-      <!-- ABOUT SECTION -->
-      <section id="about">
+      <div class="card">
         <h2>About Me</h2>
-        <p>
-          I am a Ph.D. Candidate in Marine Sciences at the University of Georgia (UGA) Skidaway Institute of Oceanography under the supervision of Dr. Sara Rivero-Calle. My research specializes in ocean color remote sensing, bio-optical oceanography, physical-biological coupling, and coastal marine water quality dynamics.
-        </p>
-        <p style="margin-top: 10px;">
-          I leverage multi-mission satellite imagery (PACE, MODIS, VIIRS, Sentinel-3, SeaHawk CubeSat), high-performance computing (HPC), machine learning, and <i>in situ</i> oceanographic observations to advance our understanding of phytoplankton productivity, suspended sediments, and carbon cycling in complex aquatic systems.
-        </p>
+        <p>I am a Ph.D. Candidate in Marine Sciences at the University of Georgia (UGA) Skidaway Institute of Oceanography working under Dr. Sara Rivero-Calle[cite: 1]. My research focuses on bio-optical oceanography, satellite ocean color remote sensing, physical-biological interactions, and coastal water quality[cite: 1].</p>
+        <p style="margin-top: 12px;">I integrate multi-mission satellite imagery (NASA PACE, MODIS, VIIRS, Sentinel-3, and SeaHawk CubeSat) with high-performance computing (HPC), machine learning, and <i>in situ</i> radiometric and biogeochemical observations[cite: 1].</p>
+      </div>
 
-        <h3 style="font-size: 1.1rem; margin-top: 15px; margin-bottom: 8px;">Research Interests</h3>
+      <div class="card">
+        <h2>Research Focus & Word Cloud</h2>
+        <div class="wordcloud-container">
+          <img src="wordcloud.png" alt="Md Masud-Ul-Alam Research Word Cloud" class="wordcloud-img">
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Education</h2>
         <ul>
-          <li><strong>Ocean Color & Optical Oceanography:</strong> Hyperspectral & multispectral remote sensing (PACE, SeaHawk, MODIS, Sentinel-3).</li>
-          <li><strong>Coastal & Shelf Processes:</strong> Physical-biological coupling across river plumes, fronts, eddies, and stratified systems.</li>
-          <li><strong>Phytoplankton Dynamics:</strong> Ecology, biogeography, community variability, and primary productivity.</li>
-          <li><strong>Marine Carbon Cycling:</strong> Cross-shelf exchange, total suspended solids (TSS), and carbon sequestration.</li>
-          <li><strong>Data Integration & AI:</strong> Machine learning, agentic AI, High-Performance Computing (HPC), and <i>in situ</i> optical sensors.</li>
+          <li><strong>Ph.D. Candidate in Marine Sciences</strong> (CGPA: 3.82) – University of Georgia, USA (2021–Present)[cite: 1]</li>
+          <li><strong>P.G. Diploma in Ocean Observation</strong> – Alfred Wegener Institute (AWI), Germany (2016–2017)[cite: 1]</li>
+          <li><strong>M.S. in Oceanography</strong> – University of Dhaka, Bangladesh (2014–2015)[cite: 1]</li>
+          <li><strong>B.Sc. in Fisheries & Marine Resources Tech.</strong> – Khulna University, Bangladesh (2008–2012)[cite: 1]</li>
         </ul>
-      </section>
-
-      <!-- RESEARCH SECTION -->
-      <section id="research">
-        <h2>Research Highlights</h2>
-        <div style="margin-bottom: 15px;">
-          <h3>Bio-Optical Algorithms & Satellite Remote Sensing</h3>
-          <p>Developing novel regional and global bio-optical algorithms to quantify Total Suspended Solids (TSS) and Chlorophyll-a in complex optically active waters (Case-2 waters) such as the South Atlantic Bight and the northern Bay of Bengal using NASA PACE OCI, Sentinel-3 OLCI, and SeaHawk CubeSat data.</p>
-        </div>
-        <div>
-          <h3>Field Oceanography & Radiometry Closure</h3>
-          <p>Participating in multi-day oceanographic cruises across the South Atlantic Bight, North Sea, Baltic Sea, and Bay of Bengal collecting CTD, HyperPro, SVC, fluorometer, and water quality data for satellite validation and matchup analysis.</p>
-        </div>
-      </section>
-
-      <!-- PUBLICATIONS SECTION -->
-      <section id="publications">
-        <h2>Selected Publications</h2>
-        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">
-          Total: 24 articles | 240+ Citations | <a href="https://scholar.google.com/citations?user=UqXEIUAAAAJ&hl=en" target="_blank">Full list on Google Scholar</a>
-        </p>
-
-        <!-- Publication Item 1 -->
-        <div class="pub-item">
-          <a href="https://doi.org/10.1002/asl2.70051" class="pub-title" target="_blank">
-            Variability of tropical cyclogenesis in the Bay of Bengal across the phase space of the Madden-Julian Oscillation
-          </a>
-          <div class="pub-authors">Barrett, B. S., Mahmud, N., <strong>Masud-Ul-Alam, M.</strong>, Ray, P., Habib, S., Foysal, M., Mili, M. I. J., & Biswas, M. H.</div>
-          <div class="pub-journal">Atmospheric Science Letters, 27(6), e70051 (2026)</div>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1002/asl2.70051" class="badge" target="_blank">DOI</a>
-            <span class="badge">Journal Article</span>
-          </div>
-        </div>
-
-        <!-- Publication Item 2 -->
-        <div class="pub-item">
-          <a href="https://doi.org/10.1007/s44289-026-00148-y" class="pub-title" target="_blank">
-            Inadequate in situ observations make the northern Bay of Bengal a blind spot for models
-          </a>
-          <div class="pub-authors"><strong>Masud-Ul-Alam, M.</strong>, Khan, M. A. I., & Turjo, K. E. Z.</div>
-          <div class="pub-journal">Discover Oceans, 3(1), 33 (2026)</div>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1007/s44289-026-00148-y" class="badge" target="_blank">DOI</a>
-            <span class="badge">Journal Article</span>
-          </div>
-        </div>
-
-        <!-- Publication Item 3 -->
-        <div class="pub-item">
-          <a href="https://doi.org/10.3390/rs18101524" class="pub-title" target="_blank">
-            Integrating in situ measurements and satellite imagery for coastal physical and biological analysis in the Cape Fear coastal region
-          </a>
-          <div class="pub-authors">Torkelson, M., Bresnahan, P. J., Rivero-Calle, S., <strong>Masud-Ul-Alam, M.</strong>, Brewin, R. J. W., & Wells, D.</div>
-          <div class="pub-journal">Remote Sensing, 18(10), 1524 (2026)</div>
-          <div class="pub-links">
-            <a href="https://doi.org/10.3390/rs18101524" class="badge" target="_blank">DOI</a>
-            <span class="badge">Journal Article</span>
-          </div>
-        </div>
-
-        <!-- Publication Item 4 -->
-        <div class="pub-item">
-          <a href="https://doi.org/10.1007/s44289-025-00081-6" class="pub-title" target="_blank">
-            Subseasonal variability of ocean currents in the Bay of Bengal
-          </a>
-          <div class="pub-authors">Barrett, B. S., Davies, A. R., Spedero, C. P., Mahmud, N., Smith, J. P., <strong>Masud-Ul-Alam, M.</strong>, Biswas, M. H., & Ahmed, M. K.</div>
-          <div class="pub-journal">Discover Oceans, 2(1), 1-14 (2025)</div>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1007/s44289-025-00081-6" class="badge" target="_blank">DOI</a>
-            <span class="badge">Journal Article</span>
-          </div>
-        </div>
-
-        <!-- Publication Item 5 -->
-        <div class="pub-item">
-          <a href="https://doi.org/10.1016/j.rsma.2022.102417" class="pub-title" target="_blank">
-            Spatial variability of the winter thermal inversion in the northern Bay of Bengal
-          </a>
-          <div class="pub-authors"><strong>Masud-Ul-Alam, M.</strong>, Khan, M. A. I., Barrett, B. S., Rivero-Calle, S., Golder, M. R., & Rouf, M. A.</div>
-          <div class="pub-journal">Regional Studies in Marine Science, 52, 102417 (2022)</div>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1016/j.rsma.2022.102417" class="badge" target="_blank">DOI</a>
-            <span class="badge">Journal Article</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- TEACHING & MENTORING SECTION -->
-      <section id="teaching">
-        <h2>Teaching & Mentoring</h2>
-        <h3>Teaching Experience</h3>
-        <ul>
-          <li><strong>Graduate Teaching Assistant (UGA):</strong> Intro to Marine Environment (MARS 1011E, Summer 2025)</li>
-          <li><strong>Lecturer (Bangladesh Maritime University, 2019–2021):</strong>
-            <ul>
-              <li>Introduction to Oceanography (OCN 1101)</li>
-              <li>Biological Oceanography (OCN 1203)</li>
-              <li>Ocean Optics (OCN 3101) & Marine Resources (OCN 2107)</li>
-              <li>Physical & Fisheries Oceanography Labs</li>
-            </ul>
-          </li>
-        </ul>
-
-        <h3 style="margin-top: 15px;">Student Mentorship</h3>
-        <p>Mentored 8 undergraduate students across NSF REU programs and thesis research, guiding multi-institutional projects leading to Q1/Q2 peer-reviewed publications.</p>
-      </section>
-
-      <!-- FIELDWORK SECTION -->
-      <section id="fieldwork">
-        <h2>Sea-going & Fieldwork Experience</h2>
-        <p>Over <strong>57+ days at sea</strong> conducting oceanographic observations, radiometry measurements, CTD profiling, water quality sampling, and satellite matchup validation:</p>
-        <ul>
-          <li><strong>RV Savannah (2021–2025):</strong> South Atlantic Bight cruises for suspended sediment, radiometry, HyperPro, SVC, and optical instrumentation training.</li>
-          <li><strong>Croatian Waters (2023):</strong> 14-day field campaign with CTD, SVC, and satellite matchup studies.</li>
-          <li><strong>BNS Turag & BNS Kapatakhya (2015–2020):</strong> Collaborative hydrographic and biogeochemical cruises in the Bay of Bengal with the Bangladesh Navy.</li>
-          <li><strong>RV Heincke & RV Elisabeth Mann Borgese (2016–2017):</strong> North Sea and Baltic Sea coastal marine research cruises.</li>
-        </ul>
-      </section>
-
-      <!-- FOOTER -->
-      <footer style="margin-top: 50px; font-size: 0.85rem; color: var(--text-muted); text-align: center; border-top: 1px solid var(--border-color); padding-top: 15px;">
-        &copy; 2026 Md Masud-Ul-Alam. Hosted on GitHub Pages.
-      </footer>
+      </div>
     </main>
   </div>
-
 </body>
 </html>
