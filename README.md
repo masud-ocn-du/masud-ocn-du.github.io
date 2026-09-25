@@ -17,7 +17,7 @@ A fast, responsive, accessible static website designed for GitHub Pages. It uses
 
 Search `index.html` for these items:
 
-- `mm59115@uga.edu`: verify this is the email you want public.
+- `masudocndu@uga.edu`: verify this is the email you want public.
 - Google Scholar, ResearchGate, and UGA profile links: already inserted.
 - `243`, `7`, and `6`: Scholar citation metrics, h-index, and i10-index. Update them periodically.
 - Biography, research, teaching, and publications: review every statement.
