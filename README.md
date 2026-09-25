@@ -1,4 +1,4 @@
-# Md Masud-Ul-Alam — Researcher Website
+# Md Masud-Ul-Alam 
 
 A fast, responsive, accessible static website designed for GitHub Pages. It uses plain HTML, CSS, and JavaScript, so no build tools or paid hosting are required.
 
